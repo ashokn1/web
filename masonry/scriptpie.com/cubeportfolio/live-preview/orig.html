@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cube Portfolio - Responsive jQuery Grid Plugin</title>
+    <script type="text/javascript">
+        if ((/android|iphone|ipad|ipod/gi).test(navigator.appVersion)) {
+            if (self != top) {
+                if (window != top) {
+                    top.location.href = location.href;
+                }
+            }
+        }
+    </script>
+
+    <link rel="shortcut icon" href="/cubeportfolio/live-preview/img/favicon.ico" type="image/x-icon">
+
+    <!-- load fonts from google -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700%7CRoboto:300,400,500,700%7CRoboto+Condensed%7CLato:400,700" rel="stylesheet" type="text/css">
+
+                     <link rel="stylesheet" type="text/css" href="/cubeportfolio/live-preview/css/website.min.css">
+
+    <!-- load css for cubeportfolio -->
+         <link rel="stylesheet" type="text/css" href="/cubeportfolio/live-preview/cubeportfolio/css/cubeportfolio.min.css">
+</head>
+<body class="main">
+    <div class="wb-header">
+        <div class="wb-wrap">
+            <a href="/cubeportfolio/live-preview/" class="logo">
+                <img src="img/logo.png" alt="Cube Portfolio Logo">
+            </a>
+
+            <div class="wb-nav">
+                <a href="javascript:;" class="toggle">
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#usage-examples" class="usage-examples-nav" title="Usage Examples">Usage Examples</a>
+                        <ul class="wb-nav-sub">
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/projects/" class="wb-nav-projects" title="Projects Template">Projects</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/gallery/" class="wb-nav-gallery" title="Gallery Template">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/mosaic/" class="wb-nav-mosaic" title="Mosaic Template">Mosaic</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/masonry/" class="wb-nav-masonry" title="Masonry Template">Masonry</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/slider-testimonials/" class="wb-nav-slider-testimonials" title="Slider & Testimonials Templates">Slider & Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/agency-work/" class="wb-nav-agency-work" title="Agency & Work Templates">Agency & Work</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/blog-posts-team/" class="wb-nav-blog-posts-team" title="Blog Posts & Meet The Team Templates">Blog Posts & Team</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/faq-tabs/" class="wb-nav-faq-tabs" title="FAQ & Tabs Templates">FAQ & Tabs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/cubeportfolio/live-preview/#features" title="Main Features">Features</a>
+                    </li>
+                    <li>
+                        <a href="/cubeportfolio/live-preview/svelte-builds/" title="Svelte Builds" class="svelte-builds-page">Svelte Builds</a>
+                    </li>
+                    <li>
+                        <a href="http://codecanyon.net/item/cube-portfolio-responsive-wordpress-grid-plugin/8534570" title="Cube Portfolio - Responsive WordPress Grid Plugin" target="_blank">Wordpress version</a>
+                    </li>
+                    <li>
+                        <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" class="buy-now">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wb-banner">
+            <div class="main-title">Cube Portfolio v4.4</div>
+            <div class="main-desc">
+                High-speed performance jQuery plugin gallery that provides animated filtering, mosaic grid, slider system, built-in lightbox and is fully responsive for any ordered content.
+            </div>
+            <div class="main-banner">
+                <a href="#usage-examples" class="wb-usage-examples">BROWSE USAGE EXAMPLES</a>
+                <!-- @todo - add video here -->
+                <!-- <p class="main-banner-tool">or check this <a href="/cubeportfolio/live-preview/svelte-builds/">custom build tool</a></p> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="wb-grid">
+        <br>
+        <br>
+        <br>
+        <h2 class="wb-features-h2">Advanced Layout System</h2>
+        <h4 class="wb-features-h4" style="max-width: 430px;">
+            Cube Portfolio uses a bin-packing algorithm that dynamically arrange the content in a clever responsive way that fills empty spaces.
+        </h4>
+
+        <div class="custom-wrap">
+            <div class="custom-wrap-grid simptip-position-top simptip-smooth simptip-fade" data-tooltip="Masonry">
+                <div id="js-custom-masonry-filter" class="custom-basic-filter">
+                <div data-filter=".item1" class="cbp-filter-item"></div>
+                <div data-filter=".item2" class="cbp-filter-item"></div>
+                <div data-filter="*" class="cbp-filter-item"></div>
+                </div>
+
+                <div id="js-custom-masonry" class="custom-masonry cbp">
+                    <div class="cbp-item item1"></div>
+                    <div class="cbp-item item2 item1 custom-masonry-big"></div>
+                    <div class="cbp-item item1"></div>
+                    <div class="cbp-item item1 item2"></div>
+                    <div class="cbp-item item2 custom-masonry-big"></div>
+                    <div class="cbp-item item2 item1"></div>
+                    <div class="cbp-item item2 custom-masonry-big"></div>
+                    <div class="cbp-item item1"></div>
+                    <div class="cbp-item item2"></div>
+                </div>
+            </div>
+
+            <div class="custom-wrap-grid simptip-position-top simptip-smooth simptip-fade" data-tooltip="Mosaic">
+                <div id="js-custom-mosaic-filter" class="custom-basic-filter">
+                    <div data-filter=".item1" class="cbp-filter-item"></div>
+                    <div data-filter=".item2" class="cbp-filter-item"></div>
+                    <div data-filter="*" class="cbp-filter-item"></div>
+                </div>
+
+                <div id="js-custom-mosaic" class="custom-mosaic cbp">
+                    <div class="cbp-item item1 item2"></div>
+                    <div class="cbp-item item2 item1"></div>
+                    <div class="cbp-item item1 item2 custom-mosaic-big"></div>
+                    <div class="cbp-item item1 custom-mosaic-big"></div>
+                    <div class="cbp-item item2 item1"></div>
+                    <div class="cbp-item item2"></div>
+                    <div class="cbp-item item2"></div>
+                    <div class="cbp-item item1"></div>
+                    <div class="cbp-item item2 custom-mosaic-big"></div>
+                    <div class="cbp-item item2 custom-mosaic-big"></div>
+                    <div class="cbp-item item1"></div>
+                    <div class="cbp-item item1 item2"></div>
+                </div>
+            </div>
+
+            <div class="custom-wrap-grid simptip-position-top simptip-smooth simptip-fade" data-tooltip="Crazy">
+                <div id="js-custom-crazy-filter" class="custom-basic-filter">
+                    <div data-filter=".item1" class="cbp-filter-item"></div>
+                    <div data-filter=".item2" class="cbp-filter-item"></div>
+                    <div data-filter="*" class="cbp-filter-item"></div>
+                </div>
+
+                <div id="js-custom-crazy" class="custom-crazy cbp">
+                    <div class="cbp-item item1 custom-crazy-small"></div>
+                    <div class="cbp-item item2 item1 custom-crazy-heavy"></div>
+                    <div class="cbp-item item1 item2 custom-crazy-small"></div>
+                    <div class="cbp-item item2 custom-crazy-small"></div>
+                    <div class="cbp-item custom-crazy-small"></div>
+                    <div class="cbp-item item1 item2 custom-crazy-big"></div>
+                    <div class="cbp-item item2 custom-crazy-medium"></div>
+                    <div class="cbp-item item1 item2 custom-crazy-medium"></div>
+                    <div class="cbp-item item2 item1 custom-crazy-light"></div>
+                    <div class="cbp-item item2 custom-crazy-light"></div>
+                    <div class="cbp-item item2 item1 custom-crazy-small"></div>
+                    <div class="cbp-item item2 custom-crazy-small"></div>
+                    <div class="cbp-item item2 custom-crazy-heavy2"></div>
+                    <div class="cbp-item item1 item2 custom-crazy-heavy"></div>
+                    <div class="cbp-item item1 custom-crazy-light"></div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div id="usage-examples" class="wb-examples wb-grid-stripe">
+        <div class="wb-center">
+            <h2 class="wb-features-h2">Usage Examples</h2>
+            <h4 class="wb-features-h4">
+                Beautifully designed, these pre-made templates are a great starting point to use as is or to customize.
+            </h4>
+
+            <div id="js-usage-examples" class="cbp usage-examples-grid">
+                <div class="cbp-item wb-example-projects">
+                    <a href="/cubeportfolio/live-preview/templates/projects/" class="cbp-caption">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/cubeportfolio/live-preview/img/examples/projects.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW MORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-work-title">Projects</div>
+                    </a>
+                </div>
+                <div class="cbp-item wb-example-gallery">
+                    <a href="/cubeportfolio/live-preview/templates/gallery/" class="cbp-caption">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/cubeportfolio/live-preview/img/examples/gallery.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW MORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-work-title">Gallery</div>
+                    </a>
+                </div>
+                <div class="cbp-item wb-example-mosaic">
+                    <a href="/cubeportfolio/live-preview/templates/mosaic/" class="cbp-caption">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/cubeportfolio/live-preview/img/examples/mosaic.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW MORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-work-title">Mosaic</div>
+                    </a>
+                </div>
+                <div class="cbp-item wb-example-masonry">
+                    <a href="/cubeportfolio/live-preview/templates/masonry/" class="cbp-caption">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/cubeportfolio/live-preview/img/examples/masonry.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW MORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-work-title">Masonry</div>
+                    </a>
+                </div>
+                <div class="cbp-item wb-example-slider-testimonials">
+                    <a href="/cubeportfolio/live-preview/templates/slider-testimonials/" class="cbp-caption">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/cubeportfolio/live-preview/img/examples/slider.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW MORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-work-title">Slider & Testimonials</div>
+                    </a>
+                </div>
+                <div class="cbp-item wb-example-agency-work">
+                    <a href="/cubeportfolio/live-preview/templates/agency-work/" class="cbp-caption">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/cubeportfolio/live-preview/img/examples/work.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW MORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-work-title">Agency & Work</div>
+                    </a>
+                </div>
+                <div class="cbp-item wb-example-blog-posts-team">
+                    <a href="/cubeportfolio/live-preview/templates/blog-posts-team/" class="cbp-caption">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/cubeportfolio/live-preview/img/examples/blog.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW MORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-work-title">Blog Posts & Team</div>
+                    </a>
+                </div>
+                <div class="cbp-item wb-example-faq-tabs">
+                    <a href="/cubeportfolio/live-preview/templates/faq-tabs/" class="cbp-caption">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="/cubeportfolio/live-preview/img/examples/faq.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cbp-l-caption-text">VIEW MORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-work-title">FAQ & Tabs</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="features" class="wb-features">
+        <div class="wb-center">
+            <h2 class="wb-features-h2">Main Features</h2>
+
+            <ul class="wb-features-ul">
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Responsive Design</h3>
+
+                    <p class="wb-features-p">
+                        Cube Portfolio adapts his layout to the viewing device by using a fluid grid. This way you offer a consistent user
+                        experiences across all devices. Also you can set the number of columns based on the browser width.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Fully Customizable</h3>
+
+                    <p class="wb-features-p">
+                        You can customize everytingh from grid layout, lightbox style to every possible animation. With just a little
+                        HTML, CSS ans JS you can customize the plugin to fulfill your needs.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">19 Starter Templates</h3>
+
+                    <p class="wb-features-p">
+                        Cube Portfolio includes 19 starter templates. Combine features from different templates to create your perfect one.
+                        Choose what is best for you.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Captions</h3>
+
+                    <p class="wb-features-p">
+                        Cube Portfolio has predefined captions, but it is very simple to add your own HMTL formatted containers inside the
+                        entries with your own CSS. You can create captions from almost any static HTML elements.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">CSS3 Animations</h3>
+
+                    <p class="wb-features-p">
+                        The plugin use the best browser features when available (CSS3 transition and transform, GPU acceleration) but also have nice fallbacks
+                        for legacy browsers.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Support &amp; Updates For Free</h3>
+
+                    <p class="wb-features-p">
+                        Connect to our support stuff to get your answers and stay up to date with free updates for life.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Permalinks (deeplinking)</h3>
+
+                    <p class="wb-features-p">
+                        You may link to each project from address bar by adding #cbp hash to the end of URL. Optionally you can make URL
+                        automatically change when singlePage is changes.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Video support</h3>
+
+                    <p class="wb-features-p">
+                        YouTube, Vimeo, Ted or self-hosted videos can be added to any item. Also, you can add video in lightbox or singlePage popup.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Cross-browser support</h3>
+
+                    <p class="wb-features-p">
+                        Cube Portfolio works and has been tested on IE 8+, Chrome 10+, Mozilla 4+, iOS and Android 2.0+.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Grid & Slider Layout</h3>
+
+                    <p class="wb-features-p">
+                        There are two types of layout to choose: slider or grid. Slider layout will arrage the items
+                        horizontally with navigation arrows. Grid layout place the items in optimal position based on the
+                        available vertical space.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Documentation</h3>
+
+                    <p class="wb-features-p">
+                        Extensive step-by-step guide to help you with usage and customization.
+                    </p>
+                </li>
+                <li class="wb-features-li">
+                    <h3 class="wb-features-h3">Filtering</h3>
+
+                    <p class="wb-features-p">
+                        Filter your portfolios, galleries, team members, blog posts or any other ordered content.
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="wb-foter-wrapper">
+        <div class="wb-footer">
+            <div>
+                &#169; 2013-2019 Cube Portfolio. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.ravenjs.com/3.22.2/raven.min.js" crossorigin="anonymous"></script>
+    <script>Raven.config('https://a4135b01ce7a4f5a9ec97cdaa0edfc4e@sentry.io/286275').install()</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46357659-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- load jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- load cubeportfolio plugin -->
+         <script type="text/javascript" src="/cubeportfolio/live-preview/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+
+             <script type="text/javascript" src="/cubeportfolio/live-preview/js/jquery.website.min.js"></script>
+
+</body>
+</html>

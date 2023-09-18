@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cube Portfolio - Responsive jQuery Grid Plugin</title>
+
+    <script type="text/javascript">
+        if ((/android|iphone|ipad|ipod/gi).test(navigator.appVersion)) {
+            if (self != top) {
+                if (window != top) {
+                    top.location.href = location.href;
+                }
+            }
+        }
+    </script>
+
+    <link rel="shortcut icon" href="/cubeportfolio/live-preview/img/favicon.ico" type="image/x-icon">
+
+    <!-- load fonts from google -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700%7CRoboto:300,400,500,700%7CRoboto+Condensed%7CLato:400,700" rel="stylesheet" type="text/css">
+
+                     <link rel="stylesheet" type="text/css" href="/cubeportfolio/live-preview/css/website.min.css">
+
+    <!-- load css for cubeportfolio -->
+         <link rel="stylesheet" type="text/css" href="/cubeportfolio/live-preview/cubeportfolio/css/cubeportfolio.min.css">
+</head>
+<body class="inner-page agency-work-page">
+    <div class="wb-header">
+        <div class="wb-wrap">
+            <a href="/cubeportfolio/live-preview/" class="logo">
+                <img src="/cubeportfolio/live-preview/img/logo.png" alt="Cube Portfolio Logo">
+            </a>
+
+            <div class="wb-nav">
+                <a href="javascript:;" class="toggle">
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#usage-examples" class="usage-examples-nav" title="Usage Examples">Usage Examples</a>
+                        <ul class="wb-nav-sub">
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/projects/" class="wb-nav-projects" title="Projects Template">Projects</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/gallery/" class="wb-nav-gallery" title="Gallery Template">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/mosaic/" class="wb-nav-mosaic" title="Mosaic Template">Mosaic</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/masonry/" class="wb-nav-masonry" title="Masonry Template">Masonry</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/slider-testimonials/" class="wb-nav-slider-testimonials" title="Slider & Testimonials Templates">Slider & Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/agency-work/" class="wb-nav-agency-work" title="Agency & Work Templates">Agency & Work</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/blog-posts-team/" class="wb-nav-blog-posts-team" title="Blog Posts & Meet The Team Templates">Blog Posts & Team</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/faq-tabs/" class="wb-nav-faq-tabs" title="FAQ & Tabs Templates">FAQ & Tabs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/cubeportfolio/live-preview/#features" title="Main Features">Features</a>
+                    </li>
+                    <li>
+                        <a href="/cubeportfolio/live-preview/svelte-builds/" title="Svelte Builds" class="svelte-builds-page">Svelte Builds</a>
+                    </li>
+                    <li>
+                        <a href="http://codecanyon.net/item/cube-portfolio-responsive-wordpress-grid-plugin/8534570" title="Cube Portfolio - Responsive WordPress Grid Plugin" target="_blank">Wordpress version</a>
+                    </li>
+                    <li>
+                        <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" class="buy-now">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wb-grid">
+        <div class="wb-center">
+            <div class="example">
+                <div class="example-title">Agency</div>
+                <div class="example-desc">
+                    You can customize everything from grid layout, lightbox style to every possible animation. With just a little HTML, CSS ans JS you can customize the plugin to fulfill your needs.
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="cbp-l-center">
+                <div id="js-filters-agency" class="cbp-l-filters-text">
+                    <div class="cbp-l-filters-text-sort">Filter by:</div>
+                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                        All <div class="cbp-filter-counter"></div>
+                    </div> |
+                    <div data-filter=".identity" class="cbp-filter-item">
+                        Identity <div class="cbp-filter-counter"></div>
+                    </div> |
+                    <div data-filter=".web-design" class="cbp-filter-item">
+                        Web Design <div class="cbp-filter-counter"></div>
+                    </div> |
+                    <div data-filter=".graphic" class="cbp-filter-item">
+                        Graphic <div class="cbp-filter-counter"></div>
+                    </div> |
+                    <div data-filter=".logos" class="cbp-filter-item">
+                        Logo <div class="cbp-filter-counter"></div>
+                    </div>
+                </div>
+
+                <div id="js-sort-agency" class="cbp-l-sort cbp-l-sort--simple">
+                    <div class="cbp-l-text-sort">Sort by: </div>
+                    <div class="cbp-l-dropdown">
+                        <div class="cbp-l-dropdown-wrap">
+                            <div class="cbp-l-dropdown-header">Original order</div>
+                            <div class="cbp-l-dropdown-list">
+                                <div class="cbp-l-dropdown-item cbp-sort-item cbp-l-dropdown-item--active" data-sort="" data-sortBy="">Original order</div>
+                                <div class="cbp-l-dropdown-item cbp-sort-item" data-sort=".cbp-l-grid-agency-title" data-sortBy="string:asc">Title - ASC</div>
+                                <div class="cbp-l-dropdown-item cbp-sort-item" data-sort=".cbp-l-grid-agency-title" data-sortBy="string:desc">Title - DESC</div>
+                                <div class="cbp-l-dropdown-item cbp-sort-item" data-sort=".cbp-l-grid-agency-desc" data-sortBy="string:asc">Description - ASC</div>
+                                <div class="cbp-l-dropdown-item cbp-sort-item" data-sort=".cbp-l-grid-agency-desc" data-sortBy="string:desc">Description - DESC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="js-grid-agency" class="cbp cbp-l-grid-agency">
+                <div class="cbp-item graphic">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/17.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Dashboard</div>
+                        <div class="cbp-l-grid-agency-desc">Web Design / Graphic</div>
+                    </a>
+                </div>
+                <div class="cbp-item web-design logos">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/19.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">World Clock</div>
+                        <div class="cbp-l-grid-agency-desc">Logo / Web Design</div>
+                    </a>
+                </div>
+                <div class="cbp-item graphic logos">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/111.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">To-Do Dashboard</div>
+                        <div class="cbp-l-grid-agency-desc">Graphic / Logo</div>
+                    </a>
+                </div>
+                <div class="cbp-item web-design graphic">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/18.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Events and More</div>
+                        <div class="cbp-l-grid-agency-desc">Web Design / Graphic</div>
+                    </a>
+                </div>
+                <div class="cbp-item identity web-design">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/8.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">WhereTO App</div>
+                        <div class="cbp-l-grid-agency-desc">Web Design / Identity</div>
+                    </a>
+                </div>
+                <div class="cbp-item identity web-design">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/10.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Ski * Buddy</div>
+                        <div class="cbp-l-grid-agency-desc">Identity / Web Design</div>
+                    </a>
+                </div>
+                <div class="cbp-item graphic logos">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/13.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Seemple* Music</div>
+                        <div class="cbp-l-grid-agency-desc">Graphic / Logo</div>
+                    </a>
+                </div>
+                <div class="cbp-item identity graphic">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/42.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Remind~Me More</div>
+                        <div class="cbp-l-grid-agency-desc">Identity / Graphic</div>
+                    </a>
+                </div>
+                <div class="cbp-item web-design graphic">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/109.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Workout Buddy</div>
+                        <div class="cbp-l-grid-agency-desc">Web Design / Graphic</div>
+                    </a>
+                </div>
+                <div class="cbp-item identity web-design">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/106.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Bills Bills Bills</div>
+                        <div class="cbp-l-grid-agency-desc">Identity / Web Design</div>
+                    </a>
+                </div>
+                <div class="cbp-item identity logos">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/11.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Generic Apps</div>
+                        <div class="cbp-l-grid-agency-desc">Identity / Logo</div>
+                    </a>
+                </div>
+                <div class="cbp-item identity logos">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/7.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Speed Detector</div>
+                        <div class="cbp-l-grid-agency-desc">Graphic / Web Design</div>
+                    </a>
+                </div>
+                <div class="cbp-item graphic logos">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/16.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Drag 2 Upload ~ Widget</div>
+                        <div class="cbp-l-grid-agency-desc">Graphic / Web Design</div>
+                    </a>
+                </div>
+                <div class="cbp-item identity logos">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/89.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Seemple* Music</div>
+                        <div class="cbp-l-grid-agency-desc">Graphic / Web Design</div>
+                    </a>
+                </div>
+                <div class="cbp-item graphic web-design">
+                    <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">
+                        <div class="cbp-caption">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-cbp-src="../../img/380x250/36.jpg" alt="" width="380" height="250">
+                            </div>
+                        </div>
+                        <div class="cbp-l-grid-agency-title">Bolt UI</div>
+                        <div class="cbp-l-grid-agency-desc">Graphic / Web Design</div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="js-loadMore-agency" class="cbp-l-loadMore-button">
+                <a href="ajax-agency/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
+                    <span class="cbp-l-loadMore-defaultText">LOAD MORE (<span class="cbp-l-loadMore-loadItems">6</span>)</span>
+                    <span class="cbp-l-loadMore-loadingText">LOADING...</span>
+                    <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wb-grid wb-grid-stripe">
+        <div class="wb-center">
+            <div class="example">
+                <div class="example-title">Awesome Work</div>
+                <div class="example-desc">
+                </div>
+            </div>
+
+            <div class="grid" style="max-width: 980px; margin-left: auto; margin-right: auto;">
+                <div id="js-filters-awesome-work" class="cbp-l-filters-work">
+                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                        SHOW ALL
+                    </div>
+                    <div data-filter=".identity" class="cbp-filter-item">
+                        IDENTITY <div class="cbp-filter-counter"></div>
+                    </div>
+                    <div data-filter=".web-design" class="cbp-filter-item">
+                        WEB DESIGN <div class="cbp-filter-counter"></div>
+                    </div>
+                    <div data-filter=".graphic" class="cbp-filter-item">
+                        GRAPHIC <div class="cbp-filter-counter"></div>
+                    </div>
+                    <div data-filter=".logos" class="cbp-filter-item">
+                        LOGO <div class="cbp-filter-counter"></div>
+                    </div>
+                </div>
+
+                <div id="js-grid-awesome-work" class="cbp cbp-l-grid-work">
+                    <div class="cbp-item identity">
+                        <a href="ajax-awesome-work/project1.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="../../img/480x250/13.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap"></div>
+                        </a>
+                        <a href="ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Dashboard</a>
+                        <div class="cbp-l-grid-work-desc">Web Design / Graphic</div>
+                    </div>
+                    <div class="cbp-item web-design logos">
+                        <a href="ajax-awesome-work/project2.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="../../img/480x250/14.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap"></div>
+                        </a>
+                        <a href="ajax-awesome-work/project2.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">World Clock</a>
+                        <div class="cbp-l-grid-work-desc">Logo / Web Design</div>
+                    </div>
+                    <div class="cbp-item graphic logos">
+                        <a href="ajax-awesome-work/project3.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="../../img/480x250/16.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap"></div>
+                        </a>
+                        <a href="ajax-awesome-work/project3.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">To-Do Dashboard</a>
+                        <div class="cbp-l-grid-work-desc">Graphic / Logo</div>
+                    </div>
+                    <div class="cbp-item web-design graphic">
+                        <a href="ajax-awesome-work/project4.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="../../img/480x250/17.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap"></div>
+                        </a>
+                        <a href="ajax-awesome-work/project4.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Events and More</a>
+                        <div class="cbp-l-grid-work-desc">Web Design / Graphic</div>
+                    </div>
+                    <div class="cbp-item identity web-design">
+                        <a href="ajax-awesome-work/project5.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="../../img/480x250/19.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap"></div>
+                        </a>
+                        <a href="ajax-awesome-work/project5.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">WhereTO App</a>
+                        <div class="cbp-l-grid-work-desc">Web Design / Identity</div>
+                    </div>
+                    <div class="cbp-item identity web-design">
+                        <a href="ajax-awesome-work/project6.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                            <div class="cbp-caption-defaultWrap">
+                                <img src="../../img/480x250/11.jpg" alt="">
+                            </div>
+                            <div class="cbp-caption-activeWrap"></div>
+                        </a>
+                        <a href="ajax-awesome-work/project6.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Ski * Buddy</a>
+                        <div class="cbp-l-grid-work-desc">Identity / Web Design</div>
+                    </div>
+                </div>
+
+                <div id="js-loadMore-awesome-work" class="cbp-l-loadMore-button">
+                    <a href="ajax-awesome-work/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
+                        <span class="cbp-l-loadMore-defaultText">LOAD MORE</span>
+                        <span class="cbp-l-loadMore-loadingText">LOADING...</span>
+                        <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="usage-examples" class="wb-center">
+        <div class="example">
+            <div class="example-title">Other Templates</div>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="js-usage-examples" class="cbp usage-examples-grid">
+            <div class="cbp-item wb-example-projects">
+                <a href="/cubeportfolio/live-preview/templates/projects/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/projects.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Projects</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-gallery">
+                <a href="/cubeportfolio/live-preview/templates/gallery/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/gallery.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Gallery</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-mosaic">
+                <a href="/cubeportfolio/live-preview/templates/mosaic/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/mosaic.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Mosaic</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-masonry">
+                <a href="/cubeportfolio/live-preview/templates/masonry/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/masonry.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Masonry</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-slider-testimonials">
+                <a href="/cubeportfolio/live-preview/templates/slider-testimonials/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/slider.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Slider & Testimonials</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-agency-work">
+                <a href="/cubeportfolio/live-preview/templates/agency-work/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/work.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Agency & Work</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-blog-posts-team">
+                <a href="/cubeportfolio/live-preview/templates/blog-posts-team/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/blog.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Blog Posts & Team</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-faq-tabs">
+                <a href="/cubeportfolio/live-preview/templates/faq-tabs/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/faq.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">FAQ & Tabs</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wb-foter-wrapper">
+        <div class="wb-footer">
+            <div>
+                &#169; 2013-2019 Cube Portfolio. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.ravenjs.com/3.22.2/raven.min.js" crossorigin="anonymous"></script>
+    <script>Raven.config('https://a4135b01ce7a4f5a9ec97cdaa0edfc4e@sentry.io/286275').install()</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46357659-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- load jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- load cubeportfolio plugin -->
+         <script type="text/javascript" src="/cubeportfolio/live-preview/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+
+             <script type="text/javascript" src="/cubeportfolio/live-preview/js/jquery.website.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

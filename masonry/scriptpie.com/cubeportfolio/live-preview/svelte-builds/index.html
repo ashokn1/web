@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cube Portfolio - Responsive jQuery Grid Plugin</title>
+    <script type="text/javascript">
+    if ((/android|iphone|ipad|ipod/gi).test(navigator.appVersion)) {
+        if (self != top) {
+            if (window != top) {
+                top.location.href = location.href;
+            }
+        }
+    }
+    </script>
+    <link rel="shortcut icon" href="/cubeportfolio/live-preview/img/favicon.ico" type="image/x-icon">
+    <!-- load fonts from google -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700%7CRoboto:300,400,500,700%7CRoboto+Condensed%7CLato:400,700" rel="stylesheet" type="text/css">
+                         <link rel="stylesheet" type="text/css" href="/cubeportfolio/live-preview/css/website.min.css">
+    <!-- load css for cubeportfolio -->
+         <link rel="stylesheet" type="text/css" href="/cubeportfolio/live-preview/cubeportfolio/css/cubeportfolio.min.css">
+</head>
+
+<body class="inner-page">
+    <div class="wb-header">
+        <div class="wb-wrap">
+            <a href="/cubeportfolio/live-preview/" class="logo">
+                <img src="/cubeportfolio/live-preview/img/logo.png" alt="Cube Portfolio Logo">
+            </a>
+            <div class="wb-nav">
+                <a href="javascript:;" class="toggle">
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#usage-examples" class="usage-examples-nav" title="Usage Examples">Usage Examples</a>
+                        <ul class="wb-nav-sub">
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/projects/" class="wb-nav-projects" title="Projects Template">Projects</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/gallery/" class="wb-nav-gallery" title="Gallery Template">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/mosaic/" class="wb-nav-mosaic" title="Mosaic Template">Mosaic</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/masonry/" class="wb-nav-masonry" title="Masonry Template">Masonry</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/slider-testimonials/" class="wb-nav-slider-testimonials" title="Slider & Testimonials Templates">Slider & Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/agency-work/" class="wb-nav-agency-work" title="Agency & Work Templates">Agency & Work</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/blog-posts-team/" class="wb-nav-blog-posts-team" title="Blog Posts & Meet The Team Templates">Blog Posts & Team</a>
+                            </li>
+                            <li>
+                                <a href="/cubeportfolio/live-preview/templates/faq-tabs/" class="wb-nav-faq-tabs" title="FAQ & Tabs Templates">FAQ & Tabs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/cubeportfolio/live-preview/#features" title="Main Features">Features</a>
+                    </li>
+                    <li>
+                        <a href="/cubeportfolio/live-preview/svelte-builds/" title="Svelte Builds" class="svelte-builds-page svelte-builds-page--active">Svelte Builds</a>
+                    </li>
+                    <li>
+                        <a href="http://codecanyon.net/item/cube-portfolio-responsive-wordpress-grid-plugin/8534570" title="Cube Portfolio - Responsive WordPress Grid Plugin" target="_blank">Wordpress version</a>
+                    </li>
+                    <li>
+                        <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" class="buy-now">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wb-grid wb-grid-stripe">
+        <div class="wb-center">
+            <div class="example">
+                <div class="example-title">Svelte Builds</div>
+                <div class="example-desc">
+                    Generate JS & CSS code only with the features you need. Cube Portfolio uses a modular system
+                    that produce only the code you need and strip out the unused features.
+                    In a typical situation, this tool shrinks the size (JS & CSS) of the plugin by half.
+                </div>
+            </div>
+            <div class="grid" style="margin-bottom: 90px;">
+                <div class="svelte-body">
+                    <label for="id-caption">Caption</label>
+                    <select class="js-selectize" id="id-caption" multiple>
+                        <option value="expand">expand</option>
+                        <option value="fadeIn">fadeIn</option>
+                        <option value="minimal">minimal</option>
+                        <option value="moveRight">moveRight</option>
+                        <option value="overlayBottom">overlayBottom</option>
+                        <option value="overlayBottomAlong">overlayBottomAlong</option>
+                        <option value="overlayBottomPush">overlayBottomPush</option>
+                        <option value="overlayBottomReveal">overlayBottomReveal</option>
+                        <option value="overlayRightAlong">overlayRightAlong</option>
+                        <option value="pushDown">pushDown</option>
+                        <option value="pushTop">pushTop</option>
+                        <option value="revealBottom">revealBottom</option>
+                        <option value="revealLeft">revealLeft</option>
+                        <option value="revealTop">revealTop</option>
+                        <option value="zoom">zoom</option>
+                        <option value="opacity">opacity</option>
+                    </select>
+                </div>
+                <div class="svelte-body">
+                    <label for="id-filter">Filter</label>
+                    <select class="js-selectize" id="id-filter" multiple>
+                        <option value="alignCenter">alignCenter</option>
+                        <option value="alignLeft">alignLeft</option>
+                        <option value="alignRight">alignRight</option>
+                        <option value="button">button</option>
+                        <option value="buttonCenter">buttonCenter</option>
+                        <option value="dropdown">dropdown</option>
+                        <option value="holder">holder</option>
+                        <option value="subFilters">subFilters</option>
+                        <option value="list">list</option>
+                        <option value="work">work</option>
+                        <option value="big">big</option>
+                        <option value="text">text</option>
+                        <option value="underline">underline</option>
+                    </select>
+                </div>
+                <div class="svelte-body">
+                    <label for="id-animation">Animation</label>
+                    <select class="js-selectize" id="id-animation" multiple>
+                        <option value="quicksand">quicksand</option>
+                        <option value="fadeOut">fadeOut</option>
+                        <option value="flipOut">flipOut</option>
+                        <option value="flipBottom">flipBottom</option>
+                        <option value="scaleSides">scaleSides</option>
+                        <option value="skew">skew</option>
+                        <option value="fadeOutTop">fadeOutTop</option>
+                        <option value="slideLeft">slideLeft</option>
+                        <option value="sequentially">sequentially</option>
+                        <option value="3dflip">3dflip</option>
+                        <option value="flipOutDelay">flipOutDelay</option>
+                        <option value="slideDelay">slideDelay</option>
+                        <option value="rotateSides">rotateSides</option>
+                        <option value="foldLeft">foldLeft</option>
+                        <option value="unfold">unfold</option>
+                        <option value="scaleDown">scaleDown</option>
+                        <option value="frontRow">frontRow</option>
+                        <option value="rotateRoom">rotateRoom</option>
+                        <option value="bounceBottom">bounceBottom</option>
+                        <option value="bounceLeft">bounceLeft</option>
+                        <option value="bounceTop">bounceTop</option>
+                        <option value="moveLeft">moveLeft</option>
+                    </select>
+                </div>
+                <div class="svelte-body">
+                    <label for="id-displayType">Display Type</label>
+                    <select class="js-selectize" id="id-displayType" multiple>
+                        <option value="bottomToTop">bottomToTop</option>
+                        <option value="fadeIn">fadeIn</option>
+                        <option value="fadeInToTop">fadeInToTop</option>
+                        <option value="sequentially">sequentially</option>
+                    </select>
+                </div>
+                <div class="svelte-body">
+                    <label for="id-loadMore">LoadMore Skins</label>
+                    <select class="js-selectize" id="id-loadMore" multiple>
+                        <option value="base">base</option>
+                        <option value="bgbutton">bgbutton</option>
+                        <option value="button">button</option>
+                        <option value="text">text</option>
+                    </select>
+                </div>
+                <div class="svelte-body">
+                    <label for="id-layout">Layout Skins</label>
+                    <select class="js-selectize" id="id-layout" multiple>
+                        <option value="agency">agency</option>
+                        <option value="awesome-work">awesome-work</option>
+                        <option value="blog-posts">blog-posts</option>
+                        <option value="clients">clients</option>
+                        <option value="faq">faq</option>
+                        <option value="juicy-projects">juicy-projects</option>
+                        <option value="masonry-projects">masonry-projects</option>
+                        <option value="meet-the-team">meet-the-team</option>
+                        <option value="mosaic-flat">mosaic-flat</option>
+                        <option value="mosaic-projects">mosaic-projects</option>
+                        <option value="mosaic">mosaic</option>
+                        <option value="slider-projects">slider-projects</option>
+                        <option value="slider-team">slider-team</option>
+                        <option value="slider-testimonials">slider-testimonials</option>
+                        <option value="tabs">tabs</option>
+                        <option value="testimonials">testimonials</option>
+                    </select>
+                </div>
+                <div class="svelte-body">
+                    <label for="id-popup">Popup</label>
+                    <input type="checkbox" id="id-popup">
+                </div>
+                <div class="svelte-body">
+                    <label for="id-slider">Slider</label>
+                    <input type="checkbox" id="id-slider">
+                </div>
+                <div class="svelte-body">
+                    <label for="id-search">Search</label>
+                    <input type="checkbox" id="id-search">
+                </div>
+                <div class="svelte-body">
+                    <label for="id-lazyLoad">LazyLoad</label>
+                    <input type="checkbox" id="id-lazyLoad">
+                </div>
+                <div class="svelte-body">
+                    <label for="id-social">Social CSS</label>
+                    <input type="checkbox" id="id-social">
+                </div>
+                <div class="svelte-body">
+                    <label for="id-purchasecode">Purchase Code</label>
+                    <input type="text" id="id-purchasecode" class="svelte-input-text">
+                </div>
+
+                <button id="js-submit-build" class="svelte-generate">Generate build</button>
+                <a href="https://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959/support" target="_blank" class="svelte-report">Report an issue!</a>
+
+                <div id="js-download-build" class="svelte-download">
+                    <span>--- Wait a moment please... ---</span>
+                    <a href="" download>--- Download generated build ---</a>
+                </div>
+
+                <div id="js-download-build-error" class="svelte-download-error">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="usage-examples" class="wb-center">
+        <div class="example">
+            <div class="example-title">Other Templates</div>
+        </div>
+        <br>
+        <br>
+        <div id="js-usage-examples" class="cbp usage-examples-grid">
+            <div class="cbp-item wb-example-projects">
+                <a href="/cubeportfolio/live-preview/templates/projects/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/projects.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Projects</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-gallery">
+                <a href="/cubeportfolio/live-preview/templates/gallery/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/gallery.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Gallery</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-mosaic">
+                <a href="/cubeportfolio/live-preview/templates/mosaic/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/mosaic.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Mosaic</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-masonry">
+                <a href="/cubeportfolio/live-preview/templates/masonry/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/masonry.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Masonry</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-slider-testimonials">
+                <a href="/cubeportfolio/live-preview/templates/slider-testimonials/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/slider.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Slider & Testimonials</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-agency-work">
+                <a href="/cubeportfolio/live-preview/templates/agency-work/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/work.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Agency & Work</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-blog-posts-team">
+                <a href="/cubeportfolio/live-preview/templates/blog-posts-team/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/blog.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">Blog Posts & Team</div>
+                </a>
+            </div>
+            <div class="cbp-item wb-example-faq-tabs">
+                <a href="/cubeportfolio/live-preview/templates/faq-tabs/" class="cbp-caption">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="/cubeportfolio/live-preview/img/examples/faq.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">VIEW MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-work-title">FAQ & Tabs</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wb-foter-wrapper">
+        <div class="wb-footer">
+            <div>
+                &#169; 2013-2018 Cube Portfolio. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.ravenjs.com/3.22.2/raven.min.js" crossorigin="anonymous"></script>
+    <script>Raven.config('https://a4135b01ce7a4f5a9ec97cdaa0edfc4e@sentry.io/286275').install()</script>
+
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-46357659-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- load jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- load cubeportfolio plugin -->
+         <script type="text/javascript" src="/cubeportfolio/live-preview/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+                 <script type="text/javascript" src="/cubeportfolio/live-preview/js/jquery.website.min.js"></script>
+</body>
+</html>

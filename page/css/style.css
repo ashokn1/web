@@ -1485,6 +1485,15 @@ header .center-logo a.logo img {max-width: 130px;}
     color: #ffffff;
 }
 
+.team-box-two .team-text{
+    text-align: center;
+    font-size: 14px;
+    padding: 2rem 0 2.5rem 0;
+}
+
+.team-box-two .team-text h5{
+    font-size: 1.6rem;
+}
 
 /*  Team Box Three  */
 
